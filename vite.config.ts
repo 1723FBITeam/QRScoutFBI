@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/QRScout2025/',
+  base: '/QRScoutFBI/',
   plugins: [react()],
   resolve: {
     alias: {
