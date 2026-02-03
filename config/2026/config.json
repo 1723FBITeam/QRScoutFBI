@@ -159,7 +159,7 @@
                   "height": 300,
                   "alt": "2026 FRC Field Layout Diagram",
                   "formResetBehavior": "preserve"
-                }
+                },
                 {
                     "title": "Fuel scored",
                     "description": "The amount of fuel scored in auto",
@@ -240,7 +240,7 @@
                   "height": 300,
                   "alt": "2026 FRC Field Layout Diagram",
                   "formResetBehavior": "preserve"
-                }
+                },
                 {
                     "title": "Robot Fuel Scored",
                     "description": "The amount of fuel scored in teleop (by the robot)",
