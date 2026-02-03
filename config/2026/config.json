@@ -149,6 +149,18 @@
                     "defaultValue": false
                 },
                 {
+                  "title": "Field Layout",
+                  "type": "image",
+                  "required": false,
+                  "code": "fieldLayout",
+                  "description": "Reference diagram of the field",
+                  "defaultValue": "https://drive.google.com/file/d/193ZGpnY616Fwjo3GOz5sCTTRVViLqrrS/view?usp=sharing",
+                  "width": 400,
+                  "height": 300,
+                  "alt": "2026 FRC Field Layout Diagram",
+                  "formResetBehavior": "preserve"
+                }
+                {
                     "title": "Fuel scored",
                     "description": "The amount of fuel scored in auto",
                     "type": "counter",
@@ -217,6 +229,18 @@
                     "formResetBehavior": "reset",
                     "required": false
                 },
+                {
+                  "title": "Field Layout",
+                  "type": "image",
+                  "required": false,
+                  "code": "fieldLayout",
+                  "description": "Reference diagram of the field",
+                  "defaultValue": "https://drive.google.com/file/d/193ZGpnY616Fwjo3GOz5sCTTRVViLqrrS/view?usp=sharing",
+                  "width": 400,
+                  "height": 300,
+                  "alt": "2026 FRC Field Layout Diagram",
+                  "formResetBehavior": "preserve"
+                }
                 {
                     "title": "Robot Fuel Scored",
                     "description": "The amount of fuel scored in teleop (by the robot)",
