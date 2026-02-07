@@ -149,31 +149,33 @@
                     "defaultValue": false
                 },
                 {
-                    "title": "Stayed in Alliance Zone?",
-                    "description": "Check if the robot moved the alliance zone during autonomous.",
-                    "type": "boolean",
-                    "required": false,
-                    "code": "MvedAZ",
+                    "title": "Moved To?",
+                    "description": "How far a robot moved in auto",
+                    "type": "select",
+                    "required": true,
+                    "code": "MTA",
                     "formResetBehavior": "reset",
-                    "defaultValue": false
+                    "defaultValue": "",
+                    "choices": {
+                        "R1": "Stayed in Alliance Zone",
+                        "R2": "Moved to Neutral Zone",
+                        "R3": "Moved to Opponent Zone"
+                        }
                 },
                 {
-                    "title": "Moved to Neutral Zone?",
-                    "description": "Check if the robot moved the neutral zone during autonomous.",
-                    "type": "boolean",
-                    "required": false,
-                    "code": "MvedNZ",
+                    "title": "Method of Crossing Zones",
+                    "description": "How did a robot move to the other zones",
+                    "type": "select",
+                    "required": true,
+                    "code": "MCZ",
                     "formResetBehavior": "reset",
-                    "defaultValue": false
-                },
-                {
-                    "title": "Moved to Opponent Zone?",
-                    "description": "Check if the robot moved the opponent zone during autonomous.",
-                    "type": "boolean",
-                    "required": false,
-                    "code": "MvedOZ",
-                    "formResetBehavior": "reset",
-                    "defaultValue": false
+                    "defaultValue": "",
+                    "choices": {
+                        "R1": "Didn't Cross Zones",
+                        "R2": "Under Trench",
+                        "R3": "Over Bump",
+                        "R4": "Both"
+                        }
                 },
                 {
                     "title": "Fuel Collected From Ground",
