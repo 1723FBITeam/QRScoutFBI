@@ -301,7 +301,34 @@
                     "code": "TFOT",
                     "formResetBehavior": "reset",
                     "defaultValue": false
-                }
+                },
+                {
+                    "title": "Passer Bot?",
+                    "description": "Collected fuel from the ground",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "code": "PB",
+                    "formResetBehavior": "reset",
+                    "required": false
+                },
+                {
+                    "title": "Shooter Bot?",
+                    "description": "Collected fuel from the ground",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "code": "SB",
+                    "formResetBehavior": "reset",
+                    "required": false
+                },
+                {
+                    "title": "Defense Bot?",
+                    "description": "Collected fuel from the ground",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "code": "DB",
+                    "formResetBehavior": "reset",
+                    "required": false
+                },
             ]
         },
         {
@@ -310,7 +337,7 @@
                 {
                     "title": "Passing Zone Range",
                     "type": "range",
-                    "required": true,
+                    "required": false,
                     "code": "or",
                     "formResetBehavior": "reset",
                     "defaultValue": 1,
@@ -322,7 +349,7 @@
                 {
                     "title": "Scoring Accuracy",
                     "type": "range",
-                    "required": true,
+                    "required": false,
                     "code": "oa",
                     "formResetBehavior": "reset",
                     "defaultValue": 0,
