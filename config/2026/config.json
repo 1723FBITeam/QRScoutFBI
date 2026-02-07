@@ -149,18 +149,6 @@
                     "defaultValue": false
                 },
                 {
-                  "title": "Field Layout",
-                  "type": "image",
-                  "required": false,
-                  "code": "fieldLayout",
-                  "description": "Reference diagram of the field",
-                  "defaultValue": "https://www.chiefdelphi.com/uploads/default/optimized/4X/6/7/2/6723807005666dc8917c080b830b30f89e7584f8_2_690x358.jpeg",
-                  "width": 400,
-                  "height": 300,
-                  "alt": "2026 FRC Field Layout Diagram",
-                  "formResetBehavior": "preserve"
-                },
-                {
                     "title": "Fuel scored",
                     "description": "The amount of fuel scored in auto",
                     "type": "counter",
@@ -228,18 +216,6 @@
                     "code": "FFD",
                     "formResetBehavior": "reset",
                     "required": false
-                },
-                {
-                  "title": "Field Layout",
-                  "type": "image",
-                  "required": false,
-                  "code": "fieldLayout",
-                  "description": "Reference diagram of the field",
-                  "defaultValue": "https://www.chiefdelphi.com/uploads/default/optimized/4X/6/7/2/6723807005666dc8917c080b830b30f89e7584f8_2_690x358.jpeg",
-                  "width": 400,
-                  "height": 300,
-                  "alt": "2026 FRC Field Layout Diagram",
-                  "formResetBehavior": "preserve"
                 },
                 {
                     "title": "Robot Fuel Scored",
@@ -332,14 +308,27 @@
             "name": "Postmatch",
             "fields": [
                 {
-                    "title": "Offense Skill",
+                    "title": "Passing Zone Range",
                     "type": "range",
-                    "required": false,
+                    "required": true,
                     "code": "or",
                     "formResetBehavior": "reset",
-                    "defaultValue": 3,
+                    "defaultValue": 1,
+                    "description": "How far can a bot pass fuel(1=1 zone, 2=2 zones, 3=Both 1&2",
                     "min": 1,
-                    "max": 5,
+                    "max": 3,
+                    "step": 1
+                },
+                {
+                    "title": "Scoring Accuracy",
+                    "type": "range",
+                    "required": true,
+                    "code": "oa",
+                    "formResetBehavior": "reset",
+                    "defaultValue": 0,
+                    "description": "How accurately does a bot score(0=0%, 1=25%, 2=50%, 3=75%, 4=100%)",
+                    "min": 0,
+                    "max": 4,
                     "step": 1
                 },
                 {
