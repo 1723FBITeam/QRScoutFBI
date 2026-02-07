@@ -150,7 +150,7 @@
                 },
                 {
                     "title": "Moved To?",
-                    "description": "How far a robot moved in auto",
+                    "description": "How far a robot moved in autonomous",
                     "type": "select",
                     "required": false,
                     "code": "MTA",
@@ -165,7 +165,7 @@
                 },
                 {
                     "title": "Method of Crossing Zones",
-                    "description": "How did a robot move to the other zones",
+                    "description": "How did a robot move to the other zones in autonomous",
                     "type": "select",
                     "required": false,
                     "code": "MCZ",
