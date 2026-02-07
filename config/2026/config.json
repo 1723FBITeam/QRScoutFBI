@@ -328,7 +328,7 @@
                     "code": "DB",
                     "formResetBehavior": "reset",
                     "required": false
-                },
+                }
             ]
         },
         {
