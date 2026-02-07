@@ -337,10 +337,11 @@
                 {
                     "title": "Passing Zone Range",
                     "type": "range",
-                    "required": true,
+                    "required": false,
                     "code": "or",
                     "formResetBehavior": "reset",
                     "description": "How far can a bot pass fuel(1=1 zone, 2=2 zones, 3=Both 1&2",
+                    "defaultValue": 1,
                     "min": 1,
                     "max": 3,
                     "step": 1
@@ -348,10 +349,11 @@
                 {
                     "title": "Scoring Accuracy",
                     "type": "range",
-                    "required": true,
+                    "required": false,
                     "code": "oa",
                     "formResetBehavior": "reset",
                     "description": "How accurately does a bot score(0=0%, 1=25%, 2=50%, 3=75%, 4=100%)",
+                    "defaultValue": 0,
                     "min": 0,
                     "max": 4,
                     "step": 1
