@@ -149,8 +149,62 @@
                     "defaultValue": false
                 },
                 {
+                    "title": "Stayed in Alliance Zone?",
+                    "description": "Check if the robot moved the alliance zone during autonomous.",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "MvedAZ",
+                    "formResetBehavior": "reset",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Moved to Neutral Zone?",
+                    "description": "Check if the robot moved the neutral zone during autonomous.",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "MvedNZ",
+                    "formResetBehavior": "reset",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Moved to Opponent Zone?",
+                    "description": "Check if the robot moved the opponent zone during autonomous.",
+                    "type": "boolean",
+                    "required": false,
+                    "code": "MvedOZ",
+                    "formResetBehavior": "reset",
+                    "defaultValue": false
+                },
+                {
+                    "title": "Fuel Collected From Ground",
+                    "description": "Collected fuel from the ground in autonomous",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "code": "FFGA",
+                    "formResetBehavior": "reset",
+                    "required": false
+                },
+                {
+                    "title": "Fuel Collected From Player",
+                    "description": "Collected fuel from the human playerin autonomous",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "code": "FFHPA",
+                    "formResetBehavior": "reset",
+                    "required": false
+                },
+                {
+                    "title": "Fuel Collected From Depot",
+                    "description": "Collected fuel from the depotin autonomous",
+                    "type": "boolean",
+                    "defaultValue": false,
+                    "code": "FFDA",
+                    "formResetBehavior": "reset",
+                    "required": false
+                },
+                {
                     "title": "Fuel scored",
-                    "description": "The amount of fuel scored in auto",
+                    "description": "The amount of fuel scored in autonomous",
                     "type": "counter",
                     "required": false,
                     "code": "FIA",
@@ -161,7 +215,7 @@
                 },
                 {
                     "title": "Climbed Tower",
-                    "description": "The height the robot climbed in auto",
+                    "description": "The height the robot climbed in autonomous",
                     "type": "select",
                     "code": "climbedAuto",
                     "required": false,
@@ -192,7 +246,7 @@
             "fields": [
                 {
                     "title": "Fuel Collected From Ground",
-                    "description": "Collected fuel from the ground",
+                    "description": "Collected fuel from the ground in teleop",
                     "type": "boolean",
                     "defaultValue": false,
                     "code": "FFG",
@@ -201,7 +255,7 @@
                 },
                 {
                     "title": "Fuel Collected From Player",
-                    "description": "Collected fuel from the human player",
+                    "description": "Collected fuel from the human player in teleop",
                     "type": "boolean",
                     "defaultValue": false,
                     "code": "FFHP",
@@ -210,7 +264,7 @@
                 },
                 {
                     "title": "Fuel Collected From Depot",
-                    "description": "Collected fuel from the depot",
+                    "description": "Collected fuel from the depot in teleop",
                     "type": "boolean",
                     "defaultValue": false,
                     "code": "FFD",
@@ -256,11 +310,10 @@
                     "defaultValue": false
                 },
                 {
-                    "title": "Touched Opposing Tower",
+                    "title": "Teleop Fouls",
                     "type": "counter",
                     "required": false,
                     "code": "Fou/Tech",
-                    "description": "The number of times the opposing tower was touched",
                     "formResetBehavior": "reset",
                     "defaultValue": 0,
                     "min": 0,
