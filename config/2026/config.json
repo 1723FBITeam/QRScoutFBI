@@ -297,6 +297,21 @@
                     "step": 1
                 },
                 {
+                    "title": "Method of Crossing Zones",
+                    "description": "How did a robot move to the other zones in autonomous",
+                    "type": "select",
+                    "required": false,
+                    "code": "MCZ",
+                    "formResetBehavior": "reset",
+                    "defaultValue": "",
+                    "choices": {
+                        "R1": "Didn't Cross Zones",
+                        "R2": "Under Trench",
+                        "R3": "Over Bump",
+                        "R4": "Both"
+                        }
+                },
+                {
                     "title": "Crossed Field/Played Defense?",
                     "type": "boolean",
                     "required": false,
