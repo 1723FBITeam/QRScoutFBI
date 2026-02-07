@@ -232,7 +232,7 @@
                     }
                 },
                 {
-                    "title": "Auto Foul",
+                    "title": "Auto Fouls",
                     "type": "counter",
                     "required": false,
                     "code": "auf",
