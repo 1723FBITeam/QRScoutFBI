@@ -298,7 +298,7 @@
                 },
                 {
                     "title": "Method of Crossing Zones",
-                    "description": "How did a robot move to the other zones in autonomous",
+                    "description": "How did a robot move to the other zones in teleop",
                     "type": "select",
                     "required": false,
                     "code": "MCZ",
