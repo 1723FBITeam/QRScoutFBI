@@ -41,7 +41,15 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json,woff,woff2,ttf}'],
-        navigateFallback: null,
+        globDirectory: 'dist',
+        modifyURLPrefix: {
+          '': '/QRScoutFBI/',
+        },
+        navigateFallback: '/QRScoutFBI/index.html',
+        navigateFallbackDenylist: [/^\/api/, /\.(png|jpg|jpeg|svg|gif|webp)$/],
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        skipWaiting: true,
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
@@ -54,6 +62,17 @@ export default defineConfig({
               },
               cacheableResponse: {
                 statuses: [0, 200],
+              },
+            },
+          },
+          {
+            urlPattern: ({ url }) => url.pathname.startsWith('/QRScoutFBI/'),
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'qrscout-pages',
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
               },
             },
           },
