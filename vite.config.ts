@@ -18,7 +18,6 @@ export default defineConfig({
         theme_color: '#2d9f5d',
         background_color: '#2d9f5d',
         display: 'standalone',
-        orientation: 'portrait',
         scope: '/QRScoutFBI/',
         start_url: '/QRScoutFBI/',
         icons: [
@@ -42,6 +41,7 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,json,woff,woff2,ttf}'],
+        navigateFallback: null,
         runtimeCaching: [
           {
             urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
