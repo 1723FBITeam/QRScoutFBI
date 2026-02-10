@@ -218,7 +218,7 @@
                 },
                 {
                     "title": "Climbed Tower",
-                    "description": "The height the robot climbed in autonomous",
+                    "description": "The height the robot climbed in autonomous(Level 1 = Bottom Rung, Level 2 = Middle Rung, Level 3 = Top Rung)",
                     "type": "select",
                     "code": "climbedAuto",
                     "required": false,
@@ -344,6 +344,7 @@
             "fields": [
                 {
                     "title": "Climbed Tower",
+                    "description": "The height the robot climbed in autonomous(Level 1 = Bottom Rung, Level 2 = Middle Rung, Level 3 = Top Rung)",
                     "type": "select",
                     "required": true,
                     "code": "climbed",
