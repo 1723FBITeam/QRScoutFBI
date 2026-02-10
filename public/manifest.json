@@ -3,7 +3,7 @@
   "short_name": "QR Scout",
   "theme_color": "#ffffff",
   "background_color": "#2d9f5d",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "portrait",
   "scope": "/QRScoutFBI/",
   "start_url": "/QRScoutFBI/",
