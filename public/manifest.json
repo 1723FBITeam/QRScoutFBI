@@ -2,11 +2,11 @@
   "name": "QR Scout",
   "short_name": "QR Scout",
   "theme_color": "#ffffff",
-  "background_color": "#f03d41",
+  "background_color": "#2d9f5d",
   "display": "fullscreen",
   "orientation": "portrait",
-  "scope": "/QRScout/",
-  "start_url": "/QRScout/",
+  "scope": "/QRScoutFBI/",
+  "start_url": "/QRScoutFBI/",
   "icons": [
     {
       "src": "icons/icon-36x36.png",
