@@ -413,8 +413,8 @@
                     "code": "or",
                     "formResetBehavior": "reset",
                     "description": "How far can a robot pass fuel(1=1 zone, 2=2 zones, 3=Both 1&2",
-                    "defaultValue": 1,
-                    "min": 1,
+                    "defaultValue": 0,
+                    "min": 0,
                     "max": 3,
                     "step": 1
                 },
