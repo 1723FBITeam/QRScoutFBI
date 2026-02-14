@@ -2,7 +2,6 @@
     "title": "QRScout",
     "page_title": "Rebuilt",
     "delimiter": "\t",
-    "rowDelimiter": "\n",
     "teamNumber": 1723,
     "floatingField": {
         "show": false,
@@ -461,7 +460,7 @@
                     "required": false,
                     "code": "co",
                     "formResetBehavior": "reset",
-                    "defaultValue": "",
+                    "defaultValue": " ",
                     "min": 0,
                     "max": 100
                 }
