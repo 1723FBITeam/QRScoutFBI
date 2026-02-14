@@ -2,6 +2,7 @@
     "title": "QRScout",
     "page_title": "Rebuilt",
     "delimiter": "\t",
+    "rowDelimiter": "\n",
     "teamNumber": 1723,
     "floatingField": {
         "show": false,
