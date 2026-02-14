@@ -168,7 +168,7 @@
                     "description": "How did a robot move to the other zones in autonomous",
                     "type": "select",
                     "required": false,
-                    "code": "MCZ",
+                    "code": "MCZA",
                     "formResetBehavior": "reset",
                     "defaultValue": "",
                     "choices": {
