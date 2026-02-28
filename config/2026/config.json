@@ -375,7 +375,7 @@
                     "defaultValue": false
                 },
                 {
-                    "title": "Passer Robot?",
+                    "title": "Passer/Sweeper Robot?",
                     "description": "Type of gameplay",
                     "type": "boolean",
                     "defaultValue": false,
