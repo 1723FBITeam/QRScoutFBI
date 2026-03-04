@@ -423,11 +423,11 @@
                 },
                 {
                     "title": "Scoring Accuracy",
+                    "description": "How accurately does a robot score(0=0%, 1=25%, 2=50%, 3=75%, 4=100%)",
                     "type": "range",
                     "required": false,
                     "code": "oa",
                     "formResetBehavior": "reset",
-                    "description": "How accurately does a robot score(0=0%, 1=25%, 2=50%, 3=75%, 4=100%)",
                     "defaultValue": 0,
                     "min": 0,
                     "max": 4,
