@@ -140,15 +140,6 @@
             "name": "Autonomous",
             "fields": [
                 {
-                    "title": "Moved?",
-                    "description": "Check if the robot moved during autonomous.",
-                    "type": "boolean",
-                    "required": false,
-                    "code": "Mved",
-                    "formResetBehavior": "reset",
-                    "defaultValue": false
-                },
-                {
                     "title": "Moved To?",
                     "description": "How far a robot moved in autonomous",
                     "type": "select",
@@ -241,21 +232,6 @@
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
-                },
-                {
-                    "title": "Feeder Ability",
-                    "type": "select",
-                    "required": false,
-                    "code": "or",
-                    "formResetBehavior": "reset",
-                    "defaultValue": "0",
-                    "choices": {
-                        "0": "None",
-                        "1": "Short Passer",
-                        "2": "Long Passer",
-                        "3": "Sweeper/Pusher",
-                        "4": "Hauler"
-                    }
                 }
             ]
         },
@@ -301,17 +277,6 @@
                     "step": 1
                 },
                 {
-                    "title": "Human Fuel Scored",
-                    "description": "The amount of fuel scored directly by the human player",
-                    "type": "counter",
-                    "required": false,
-                    "code": "HFS",
-                    "formResetBehavior": "reset",
-                    "defaultValue": 0,
-                    "min": 0,
-                    "step": 1
-                },
-                {
                     "title": "Method of Crossing Zones",
                     "description": "How did a robot move to the other zones in teleop",
                     "type": "select",
@@ -351,6 +316,21 @@
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
+                },
+                {
+                    "title": "Feeder Ability",
+                    "type": "select",
+                    "required": false,
+                    "code": "or",
+                    "formResetBehavior": "reset",
+                    "defaultValue": "0",
+                    "choices": {
+                        "0": "None",
+                        "1": "Short Passer",
+                        "2": "Long Passer",
+                        "3": "Sweeper/Pusher",
+                        "4": "Hauler"
+                    }
                 }
             ]
         },
