@@ -407,18 +407,18 @@
             "name": "Postmatch",
             "fields": [
                 {
-                    "title": "Passing Zone Range",
+                    "title": "Feeder Ability",
                     "type": "select",
                     "required": false,
                     "code": "or",
                     "formResetBehavior": "reset",
-                    "description": "How far can a robot pass fuel(0= Didn't Pass, 1=1 zone, 2=2 zones, 3=Both 1&2",
                     "defaultValue": "0",
                     "choices": {
-                        "0": "0",
-                        "1": "1",
-                        "2": "2",
-                        "3": "3"
+                        "0": "None",
+                        "1": "Short Passer",
+                        "2": "Long Passer",
+                        "3": "Sweeper/Pusher",
+                        "4": "Hauler"
                     }
                 },
                 {
