@@ -241,6 +241,21 @@
                     "defaultValue": 0,
                     "min": 0,
                     "step": 1
+                },
+                {
+                    "title": "Feeder Ability",
+                    "type": "select",
+                    "required": false,
+                    "code": "or",
+                    "formResetBehavior": "reset",
+                    "defaultValue": "0",
+                    "choices": {
+                        "0": "None",
+                        "1": "Short Passer",
+                        "2": "Long Passer",
+                        "3": "Sweeper/Pusher",
+                        "4": "Hauler"
+                    }
                 }
             ]
         },
@@ -406,21 +421,6 @@
         {
             "name": "Postmatch",
             "fields": [
-                {
-                    "title": "Feeder Ability",
-                    "type": "select",
-                    "required": false,
-                    "code": "or",
-                    "formResetBehavior": "reset",
-                    "defaultValue": "0",
-                    "choices": {
-                        "0": "None",
-                        "1": "Short Passer",
-                        "2": "Long Passer",
-                        "3": "Sweeper/Pusher",
-                        "4": "Hauler"
-                    }
-                },
                 {
                     "title": "Scoring Accuracy",
                     "description": "How accurately does a robot score(0=0%, 1=25%, 2=50%, 3=75%, 4=100%)",
