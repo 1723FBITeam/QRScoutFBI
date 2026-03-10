@@ -155,48 +155,6 @@
                         }
                 },
                 {
-                    "title": "Method of Crossing Zones",
-                    "description": "How did a robot move to the other zones in autonomous",
-                    "type": "select",
-                    "required": false,
-                    "code": "MCZA",
-                    "formResetBehavior": "reset",
-                    "defaultValue": "",
-                    "choices": {
-                        "R1": "Didn't Cross Zones",
-                        "R2": "Under Trench",
-                        "R3": "Over Bump",
-                        "R4": "Both"
-                        }
-                },
-                {
-                    "title": "Fuel Collected From Ground",
-                    "description": "Collected fuel from the ground in autonomous",
-                    "type": "boolean",
-                    "defaultValue": false,
-                    "code": "FFGA",
-                    "formResetBehavior": "reset",
-                    "required": false
-                },
-                {
-                    "title": "Fuel Collected From Player",
-                    "description": "Collected fuel from the human playerin autonomous",
-                    "type": "boolean",
-                    "defaultValue": false,
-                    "code": "FFHPA",
-                    "formResetBehavior": "reset",
-                    "required": false
-                },
-                {
-                    "title": "Fuel Collected From Depot",
-                    "description": "Collected fuel from the depotin autonomous",
-                    "type": "boolean",
-                    "defaultValue": false,
-                    "code": "FFDA",
-                    "formResetBehavior": "reset",
-                    "required": false
-                },
-                {
                     "title": "Fuel scored",
                     "description": "The amount of fuel scored in autonomous",
                     "type": "counter",
@@ -222,16 +180,6 @@
                         "L3": "Level 3",
                         "F": "Failed Climb"
                     }
-                },
-                {
-                    "title": "Auto Fouls",
-                    "type": "counter",
-                    "required": false,
-                    "code": "auf",
-                    "formResetBehavior": "reset",
-                    "defaultValue": 0,
-                    "min": 0,
-                    "step": 1
                 }
             ]
         },
@@ -239,34 +187,7 @@
             "name": "Teleop",
             "fields": [
                 {
-                    "title": "Fuel Collected From Ground",
-                    "description": "Collected fuel from the ground in teleop",
-                    "type": "boolean",
-                    "defaultValue": false,
-                    "code": "FFG",
-                    "formResetBehavior": "reset",
-                    "required": false
-                },
-                {
-                    "title": "Fuel Collected From Player",
-                    "description": "Collected fuel from the human player in teleop",
-                    "type": "boolean",
-                    "defaultValue": false,
-                    "code": "FFHP",
-                    "formResetBehavior": "reset",
-                    "required": false
-                },
-                {
-                    "title": "Fuel Collected From Depot",
-                    "description": "Collected fuel from the depot in teleop",
-                    "type": "boolean",
-                    "defaultValue": false,
-                    "code": "FFD",
-                    "formResetBehavior": "reset",
-                    "required": false
-                },
-                {
-                    "title": "Robot Fuel Scored",
+                    "title": "Fuel Scored",
                     "description": "The amount of fuel scored in teleop (by the robot)",
                     "type": "counter",
                     "required": false,
@@ -277,53 +198,13 @@
                     "step": 1
                 },
                 {
-                    "title": "Method of Crossing Zones",
-                    "description": "How did a robot move to the other zones in teleop",
-                    "type": "select",
-                    "required": false,
-                    "code": "MCZ",
-                    "formResetBehavior": "reset",
-                    "defaultValue": "",
-                    "choices": {
-                        "R1": "Didn't Cross Zones",
-                        "R2": "Under Trench",
-                        "R3": "Over Bump",
-                        "R4": "Both"
-                        }
-                },
-                {
-                    "title": "Crossed Field/Played Defense?",
-                    "type": "boolean",
-                    "required": false,
-                    "code": "CFPDT",
-                    "formResetBehavior": "reset",
-                    "defaultValue": false
-                },
-                {
-                    "title": "Was Robot Defended by Other Alliance?",
-                    "type": "boolean",
-                    "required": false,
-                    "code": "DEFEg",
-                    "formResetBehavior": "reset",
-                    "defaultValue": false
-                },
-                {
-                    "title": "Teleop Fouls",
-                    "type": "counter",
-                    "required": false,
-                    "code": "Fou/Tech",
-                    "formResetBehavior": "reset",
-                    "defaultValue": 0,
-                    "min": 0,
-                    "step": 1
-                },
-                {
                     "title": "Feeder Ability",
-                    "type": "select",
+                    "type": "multiselect",
+                    "description": "Choose all that apply",
                     "required": false,
                     "code": "or",
                     "formResetBehavior": "reset",
-                    "defaultValue": "0",
+                    "defaultValue": ["0"],
                     "choices": {
                         "0": "None",
                         "1": "Short Passer",
@@ -341,7 +222,7 @@
                     "title": "Climbed Tower",
                     "description": "The height the robot climbed in autonomous(Level 1 = Bottom Rung, Level 2 = Middle Rung, Level 3 = Top Rung)",
                     "type": "select",
-                    "required": true,
+                    "required": false,
                     "code": "climbed",
                     "formResetBehavior": "reset",
                     "defaultValue": "No",
@@ -370,31 +251,49 @@
                     "defaultValue": false
                 },
                 {
-                    "title": "Passer/Sweeper Robot?",
-                    "description": "Type of gameplay",
-                    "type": "boolean",
-                    "defaultValue": false,
-                    "code": "PB",
+                    "title": "Robot Gameplay",
+                    "type": "multiselect",
+                    "description": "Choose all that apply",
+                    "required": false,
+                    "code": "rg",
+                    "defaultValue": ["0"],
+                    "choices": {
+                        "1": "None",
+                        "2": "Passer/Sweeper",
+                        "3": "Shooter",
+                        "4": "Defense"
+                    },
+                    "formResetBehavior": "reset"
+                },
+                 {
+                    "title": "Method of Crossing Zones",
+                    "description": "How did a robot move to the other zones",
+                    "type": "select",
+                    "required": false,
+                    "code": "MCZ",
                     "formResetBehavior": "reset",
-                    "required": false
+                    "defaultValue": "",
+                    "choices": {
+                        "R1": "Didn't Cross Zones",
+                        "R2": "Under Trench",
+                        "R3": "Over Bump",
+                        "R4": "Both"
+                        }
                 },
                 {
-                    "title": "Shooter Robot?",
-                    "description": "Type of gameplay",
-                    "type": "boolean",
-                    "defaultValue": false,
-                    "code": "SB",
-                    "formResetBehavior": "reset",
-                    "required": false
-                },
-                {
-                    "title": "Defense Robot?",
-                    "description": "Type of gameplay",
-                    "type": "boolean",
-                    "defaultValue": false,
-                    "code": "DB",
-                    "formResetBehavior": "reset",
-                    "required": false
+                    "title": "Fuel Collection",
+                    "type": "multiselect",
+                    "description": "Choose all that apply",
+                    "required": false,
+                    "code": "fc",
+                    "defaultValue": ["0"],
+                    "choices": {
+                        "1": "None",
+                        "2": "Collected from ground",
+                        "3": "Collected from player",
+                        "4": "Collected from depot"
+                    },
+                    "formResetBehavior": "reset"
                 }
             ]
         },
@@ -439,6 +338,7 @@
                 },
                 {
                     "title": "Comments",
+                    "description": "Add any comments here (Ex:Lots of fouls gained when playing defense)",
                     "type": "text",
                     "required": false,
                     "code": "co",
