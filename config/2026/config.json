@@ -293,7 +293,7 @@
                         "4": "Collected from depot"
                     },
                     "formResetBehavior": "reset",
-                    "defaultValue": "1"
+                    "defaultValue": ["1"]
                 }
             ]
         },
