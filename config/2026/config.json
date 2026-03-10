@@ -199,7 +199,7 @@
                 },
                 {
                     "title": "Feeder Ability",
-                    "type": "multiselect",
+                    "type": "multi-select",
                     "description": "Choose all that apply",
                     "required": false,
                     "code": "or",
@@ -251,7 +251,7 @@
                 },
                 {
                     "title": "Robot Gameplay",
-                    "type": "multiselect",
+                    "type": "multi-select",
                     "description": "Choose all that apply",
                     "required": false,
                     "code": "rg",
@@ -280,8 +280,7 @@
                 },
                 {
                     "title": "Fuel Collection",
-                    "type": "multiselect",
-                    "description": "Choose all that apply",
+                    "type": "multi-select",
                     "required": false,
                     "code": "fc",
                     "choices": {
