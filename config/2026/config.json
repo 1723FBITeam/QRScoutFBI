@@ -200,7 +200,6 @@
                 {
                     "title": "Feeder Ability",
                     "type": "multi-select",
-                    "description": "Choose all that apply",
                     "required": false,
                     "code": "or",
                     "formResetBehavior": "reset",
@@ -252,7 +251,6 @@
                 {
                     "title": "Robot Gameplay",
                     "type": "multi-select",
-                    "description": "Choose all that apply",
                     "required": false,
                     "code": "rg",
                     "choices": {
