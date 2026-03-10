@@ -204,7 +204,6 @@
                     "required": false,
                     "code": "or",
                     "formResetBehavior": "reset",
-                    "defaultValue": ["0"],
                     "choices": {
                         "0": "None",
                         "1": "Short Passer",
@@ -256,7 +255,6 @@
                     "description": "Choose all that apply",
                     "required": false,
                     "code": "rg",
-                    "defaultValue": ["1"],
                     "choices": {
                         "1": "None",
                         "2": "Passer/Sweeper",
@@ -292,8 +290,7 @@
                         "3": "Collected from player",
                         "4": "Collected from depot"
                     },
-                    "formResetBehavior": "reset",
-                    "defaultValue": ["1"]
+                    "formResetBehavior": "reset"
                 }
             ]
         },
