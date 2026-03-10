@@ -286,14 +286,14 @@
                     "description": "Choose all that apply",
                     "required": false,
                     "code": "fc",
-                    "defaultValue": ["0"],
                     "choices": {
                         "1": "None",
                         "2": "Collected from ground",
                         "3": "Collected from player",
                         "4": "Collected from depot"
                     },
-                    "formResetBehavior": "reset"
+                    "formResetBehavior": "reset",
+                    "defaultValue": "0"
                 }
             ]
         },
@@ -338,7 +338,7 @@
                 },
                 {
                     "title": "Comments",
-                    "description": "Add any comments here (Ex:Lots of fouls gained when playing defense)",
+                    "description": "Add any comments here (Ex:Lots of fouls gained while playing defense)",
                     "type": "text",
                     "required": false,
                     "code": "co",
