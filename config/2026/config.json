@@ -255,7 +255,7 @@
                     "code": "rg",
                     "choices": {
                         "1": "None",
-                        "2": "Passer/Sweeper",
+                        "2": "Feeder",
                         "3": "Shooter",
                         "4": "Defense"
                     },
