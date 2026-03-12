@@ -67,7 +67,7 @@
             "fields": [
                 {
                     "title": "Agent ID",
-                    "description": "Enter the initials of the scouter.",
+                    "description": "Enter the initials of the agent.",
                     "type": "text",
                     "required": true,
                     "code": "scouter",
